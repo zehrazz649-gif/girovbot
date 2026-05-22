@@ -3,7 +3,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Playwright üçün lazım olan sistem kitabxanaları
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     wget \
     gnupg \
@@ -32,3 +32,4 @@ RUN playwright install chromium
 COPY bot.py .
 
 CMD ["python", "bot.py"]
+
