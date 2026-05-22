@@ -33,7 +33,7 @@ from playwright.async_api import async_playwright
 # BOT TOKEN
 # ═══════════════════════════════════════════
 
-BOT_TOKEN = "8707881255:AAGGHKw-_71M3qgEaKmCnCCvAZEM_5xPJAg"
+BOT_TOKEN = "8707881255:AAEtUM4Q6X9-DfGmQ590UUnxTB3JugyKXV4"
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
