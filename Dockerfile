@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Lazımi sistem paketləri
+# Playwright üçün lazım olan sistem kitabxanaları
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Playwright brauzerləri quraşdır
+# Chromium brauzerini quraşdır
 RUN playwright install chromium
 
 COPY bot.py .
